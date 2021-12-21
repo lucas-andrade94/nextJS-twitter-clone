@@ -17,6 +17,7 @@ Project developed using the following technologies:
 - [NextJS](https://nextjs.org/)
 - [Tailwind](https://tailwindcss.com/)
 - [Firebase](https://firebase.google.com/)
+- [NextAuth](https://next-auth.js.org/)
 
 ## 💿 Instalation
 
