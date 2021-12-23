@@ -138,7 +138,7 @@ function Post({ id, post, postPage }) {
           <img
             src={post.image}
             alt="Post image"
-            className="rounded-2xl max-h-[700px] object-cover mr-2"
+            className="rounded-2xl max-h-[400px] object-cover mr-2"
           />
         )}
         <div
