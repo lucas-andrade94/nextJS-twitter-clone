@@ -16,6 +16,7 @@ import Modal from "../components/Modal";
 import Login from "../components/Login";
 import Post from "../components/Post";
 import Comment from "../components/Comment";
+import Widgets from "../components/Widgets";
 import { modalState } from "../atoms/modalAtom";
 import { db } from "../firebase";
 import { ArrowLeftIcon } from "@heroicons/react/outline";
@@ -83,6 +84,10 @@ function PostPage({ trendingResults, followResults, providers }) {
             </div>
           )}
         </div>
+        <Widgets
+          trendingResults={trendingResults}
+          followResults={followResults}
+        />
         {isOpen && <Modal />}
       </main>
     </div>
