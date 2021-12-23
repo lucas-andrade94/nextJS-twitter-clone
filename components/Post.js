@@ -43,6 +43,18 @@ function Post({ id, post, postPage }) {
 
   useEffect(
     () =>
+      onSnapshot(
+        query(
+          collection(db, "posts", id, "comments"),
+          orderBy("timestamp", "desc")
+        ),
+        (snapshot) => setComments(snapshot.docs)
+      ),
+    [db, id]
+  );
+
+  useEffect(
+    () =>
       onSnapshot(collection(db, "posts", id, "likes"), (snapshot) =>
         setLikes(snapshot.docs)
       ),
@@ -122,7 +134,7 @@ function Post({ id, post, postPage }) {
             {post?.text}
           </p>
         )}
-        {post.image && (
+        {post?.image && (
           <img
             src={post.image}
             alt="Post image"

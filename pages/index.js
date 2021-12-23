@@ -17,7 +17,7 @@ export default function Home({ trendingResults, followResults, providers }) {
   if (!session) return <Login providers={providers} />;
 
   return (
-    <div className="">
+    <div>
       <Head>
         <title>Twitter Clone</title>
         <link rel="icon" href="/favicon.ico" />

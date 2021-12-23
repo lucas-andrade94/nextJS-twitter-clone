@@ -18,6 +18,7 @@ Project developed using the following technologies:
 - [Tailwind](https://tailwindcss.com/)
 - [Firebase](https://firebase.google.com/)
 - [NextAuth](https://next-auth.js.org/)
+- [Recoil.js](https://recoiljs.org/)
 
 ## 💿 Instalation
 
